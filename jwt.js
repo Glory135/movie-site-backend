@@ -1,5 +1,6 @@
 const jwt = require("jsonwebtoken");
 const User = require("./modals/user/User");
+require("dotenv").config();
 
 // generate jwt token
 const generateToken = (id, email) => {
