@@ -10,9 +10,8 @@ const movieRoute = require("./routes/movies");
 const seriesRoute = require("./routes/series");
 
 const app = express();
-env.config();
-
 app.use(cors());
+env.config();
 app.use(express.json({ limit: "50mb" }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
