@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 
 mongoose
   .connect(process.env.DB)
-  .then(console.log("connected to DB"))
+  .then(console.log("connected to DBs"))
   .catch((err) => {
     console.log(err);
   });
